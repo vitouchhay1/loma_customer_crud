@@ -75,13 +75,7 @@ const App = () => {
                 <Link to={"/login"} className="nav-link">
                   Login
                 </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to={"/register"} className="nav-link">
-                  Sign Up
-                </Link>
-              </li>
+              </li> 
             </div>
           )}
         </nav>
