@@ -1,8 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://test-api.kk-lotto.com:8080/api/";
+const API_URL = process.env.REACT_APP_BASE_URL;
 const token = localStorage.getItem("token")
-
 const getUserBoard = (name,gender) => {
   console.log(name, gender,'getr');
   axios.defaults.headers.common = {'Authorization': `Bearer ${token}`}

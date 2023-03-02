@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://test-api.kk-lotto.com:8080/api/auth/";
+const API_URL = process.env.REACT_APP_BASE_URL+"auth/";
 
 const register = (username, email, password) => {
   return axios.post(API_URL + "signup", {
