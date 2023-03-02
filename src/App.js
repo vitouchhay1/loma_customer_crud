@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Login from "./app/components/Login";
-import Register from "./app/components/Register";
 import Home from "./app/components/Home";
 import Profile from "./app/components/Profile";
 import BoardUser from "./app/components/BoardUser"; 
@@ -85,7 +84,6 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
               <Route path="/user" element={<ProtectedRoute><BoardUser /></ProtectedRoute>} /> 
             <Route path="user/create" element={<ProtectedRoute><CreateUser/></ProtectedRoute>} /> 
